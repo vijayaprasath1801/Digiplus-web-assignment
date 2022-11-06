@@ -1,0 +1,17 @@
+.con {
+  display: grid;
+  grid-template-columns: repeat(3fr, auto);
+  grid-template-rows: repeat(5fr, auto);
+  font-weight: 300px;
+  font-size: 16px;
+  padding: 30px;
+}
+.info {
+  padding: 50px;
+  grid-column: 2/3;
+  justify-content: center;
+  width: 260px;
+  border: 1px thin;
+  background: ghostwhite;
+  box-shadow: 0 0 10px #fed136;
+}

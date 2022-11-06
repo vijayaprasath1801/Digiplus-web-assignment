@@ -1,0 +1,58 @@
+.pay {
+  display: grid;
+  grid-template-columns: repeat(7fr, auto);
+  grid-template-rows: repeat(4fr, auto);
+  font-weight: 300px;
+  font-size: 14px;
+  padding: 50px;
+}
+.lbox {
+  grid-column: 1 /1;
+  grid-row: 1;
+  text-align: left;
+  padding: 10px;
+}
+.lbox > h3 {
+  color: #e57c13;
+  padding: 10px;
+  align-items: left;
+}
+.lbox > p {
+  padding: 10px;
+}
+.invoice {
+  border: 1px thin;
+  border-radius: 5px;
+  background: lightslategray;
+  color: azure;
+  margin-bottom: 10px;
+}
+.bnk {
+  border: 1px thin;
+  border-radius: 5px;
+  background: rgba(195, 248, 248, 0.438);
+}
+.mbox {
+  grid-column: 3/4;
+  grid-row: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+}
+.mbox > p {
+  padding: 8px;
+}
+.rbox {
+  text-align: left;
+  margin-left: 2px;
+  grid-column: 4/4;
+  grid-row: 1;
+}
+@media only screen and (max-width: 600px) {
+  .pay {
+    column-gap: 10px;
+  }
+  .mbox {
+    width: 100px;
+  }
+}

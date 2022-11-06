@@ -1,0 +1,70 @@
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(7fr, auto);
+  grid-template-rows: repeat(4fr, auto);
+  font-weight: 300px;
+  font-size: 14px;
+  padding: 30px;
+}
+.anounce {
+  width: 240px;
+  grid-row: 1;
+  grid-column: 7/7;
+}
+.text {
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(61, 146, 146);
+  align-items: center;
+  padding: 5px;
+  border: 1px thin;
+  background: rgb(164, 219, 219);
+}
+.leftbox {
+  grid-column: 1/1;
+  grid-row: 1;
+  align-items: left;
+  text-align: left;
+}
+.leftbox > h3 {
+  color: #e57c13;
+  padding: 10px;
+}
+.leftbox > p {
+  margin-bottom: 20px;
+}
+.samebox {
+  border: 1px thin;
+  border-radius: 5px;
+  background: rgba(195, 248, 248, 0.438);
+}
+.diffbox {
+  border: 1px thin;
+  border-radius: 5px;
+  background: lightslategray;
+  color: azure;
+}
+.middle {
+  grid-column: 4/5;
+  grid-row: 1;
+  border: 1px thin;
+  background: ghostwhite;
+  box-shadow: 0 0 10px #fed136;
+  text-align: left;
+}
+.middle > h3,
+p {
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .jobs {
+    column-gap: 10px;
+  }
+  .anounce {
+    width: 90px;
+    padding-right: 0;
+  }
+  .anounce > p {
+    font-size: 9px;
+  }
+}
